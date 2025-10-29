@@ -9,6 +9,7 @@
   },
   "scripts": {
     "dev": "bun run --filter '*' dev",
+    "start:api": "bun --filter @railway-test/api start",
     "----DATABASE----": "",
     "db:generate": "bun --filter @railway-test/db db:generate",
     "db:migrate": "bun --filter @railway-test/db db:migrate",
