@@ -1,0 +1,15 @@
+# Bun Monorepo
+
+```
+.
+└── railway-test/
+    ├── apps/
+    │   ├── api/
+    │   │   └── package.json
+    │   ├── ui/
+    │   │   └── package.json
+    ├── packages/
+    │   └── contracts/
+    │       └── package.json 
+    └── package.json
+```
