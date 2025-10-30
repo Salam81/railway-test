@@ -1,8 +1,10 @@
 import { treaty } from "@elysiajs/eden";
 import type { App } from "@railway-test/contracts";
 
-export const api = treaty<App>("http://localhost:3000/", {
-    fetch: {
-        credentials: "include",
-    },
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3000";
+
+export const api = treaty<App>(API_URL, {
+  fetch: {
+    credentials: "include",
+  },
 });
